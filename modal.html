@@ -1,0 +1,35 @@
+<html>
+        <head><title>modal test</title>
+                <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+                <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+                <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                <script type="text/javascript">
+                        <!--
+                        $(function(){
+                                                        $<"#btn".click(function(){
+                                                                                        $("#modal").dialog("open");
+                                                                                        return false;
+                                                                                });
+                                                        $("#modal").dialog({
+                                                                                        autoOpen: false,
+                                                                                        modal true,
+                                                                                        buttons: {
+                                                                                                                        "send": function(){
+                                                                                                                                                        $("#msg").html($("#inputfield").val());
+                                                                                                                                                        $(this).dialog("close");}
+                                                                                                                }
+                                                                                });
+                                                });
+                        // -->
+                </script>
+        </head>
+        <body>
+                <input type="button" id="btn" value="input">
+                <p id="msg"></p>
+                <!-- modal dialog -->
+                <div id="modal" title="input dialog">
+                        Input field:<input type="text" id="inputfield">
+                </div>
+        </body>
+</html>
+
