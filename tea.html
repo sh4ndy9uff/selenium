@@ -1,0 +1,33 @@
+<html>
+        <head><title>Coffee</title></head>
+        <body>
+                <p class="item_name">Tea</p>
+                <p class="unit_price">130 yen</p>
+                <form method="POST" action="complete.html" onsubmit="return confirm('do you confirm?');">
+                        confirmed:
+                        <select name="num">
+                                <option value="">select number</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                        </select>
+                        <br>
+                        HOT or ICE:
+                        <input type=radio name="hotice" value="hot">HOT
+                        <input type=radio name="hotice" value="ice">ICE
+                        <br>
+                        option:
+                        <input type=checkbox name="included" value="sugar">sugar
+                        <input type=checkbox name="included" value="milk">mild
+                        <input type=checkbox name="included" value="cream">cream
+                        <br>
+                        misk:
+                        <input type=text name="remarks">
+                        <br>
+                        <input type=submit value="submit">
+                        <input type=reset value="reset">
+                </form>
+                <a id="returnmenu" href="menu.html">return to Menu</a>
+        </body>
+</html>
+
